@@ -1,0 +1,116 @@
+/** @format */
+$design: light;
+
+$accent: #3072ac;
+$color2: #2d3e49;
+$color3: #c9d1d7;
+$color4: #e1e5e8;
+$color5: #fff;
+$body: #f5f5f5;
+$placeholder-color: #354652;
+
+@if $design == dark {
+  $accent: #6bddae;
+  $color2: #8bbbdb;
+  $color3: #333638;
+  $color4: #424344;
+  $color5: #181818;
+  $body: #000;
+  $placeholder-color: #95c1e0;
+}
+
+@import url("icon-font.css");
+
+@function pxToEm($px, $base: 16) {
+  @return $px / $base + 0em;
+}
+
+body {
+  background: $body;
+  margin: 0;
+  min-width: fit-content;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-center .nav-link{
+  text-align: center;
+}
+
+.navbar-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.main-photo {
+  width: 300px;
+}
+
+.about_me_block {
+    margin-top: pxToEm(60);
+    text-align: center;
+    color: #fff;
+
+    .col-12 {
+        text-align: center;
+    }
+}
+
+.about_me_block h3 {
+    color: #fff;
+    border: pxToEm(2) solid white;
+    padding: .375rem .75rem;
+    padding: pxToEm(15) pxToEm(50);
+}
+
+.main_block {
+    padding-top: pxToEm(30);
+
+    h1,h4,h6 {
+        color: #fff;
+    }
+}
+
+.skills_block 
+{
+    color: #fff;
+    
+    h3 {
+    color: #fff;
+    border: pxToEm(2) solid white;
+    padding: .375rem .75rem;
+    padding: pxToEm(15) pxToEm(50);
+}
+    .col-12 {
+        text-align: center;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.pt-3 {
+    padding-top: pxToEm(50);
+}
+
+.hobbies_block 
+{
+    img {
+        max-width: 100%;
+    }
+    
+    .col-md-4{
+        padding:0;
+    }
+}
+
+hr {
+    border: 0;
+    height: pxToEm(1);
+    background: #333;
+    background-image: linear-gradient(#fff);
+}
+
+.contacts {
+    background-color: #000;
+}
