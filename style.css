@@ -1,8 +1,5 @@
-/** @format */
-@import url("icon-font.css");
 body {
-  background: #f5f5f5;
-  margin: 0;
+  background-color: #343a40 !important;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -11,6 +8,13 @@ body {
 
 .navbar-center .nav-link {
   text-align: center;
+}
+
+.navbar-nav {
+  /* inline-flex:elementa platumu aprobezo ap ta izmeriem */
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
 }
 
 .navbar-center {
@@ -39,7 +43,6 @@ body {
 .about_me_block h3 {
   color: #fff;
   border: 0.125em solid white;
-  padding: .375rem .75rem;
   padding: 0.9375em 3.125em;
 }
 
@@ -58,7 +61,6 @@ body {
 .skills_block h3 {
   color: #fff;
   border: 0.125em solid white;
-  padding: .375rem .75rem;
   padding: 0.9375em 3.125em;
 }
 
@@ -92,5 +94,52 @@ hr {
 
 .contacts {
   background-color: #000;
+}
+
+.contact_block h3 {
+  border: 0.125em solid white;
+  padding: 0.9375em 3.125em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .navbar .nav-link {
+    margin-right: 3rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_me_block .mobile {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 750px) {
+  .desktop {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+.main_menu {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.fas.fa-baby {
+  font-size: 30px;
+  color: #1bf5f5;
+}
+
+.fas.fa-suitcase {
+  font-size: 30px;
+  color: #805403;
+}
+
+.fas.fa-star {
+  font-size: 30px;
+  color: #ffee04;
 }
 /*# sourceMappingURL=style.css.map */

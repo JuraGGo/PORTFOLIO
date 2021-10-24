@@ -1,39 +1,20 @@
-/** @format */
-$design: light;
-
-$accent: #3072ac;
-$color2: #2d3e49;
-$color3: #c9d1d7;
-$color4: #e1e5e8;
-$color5: #fff;
-$body: #f5f5f5;
-$placeholder-color: #354652;
-
-@if $design == dark {
-  $accent: #6bddae;
-  $color2: #8bbbdb;
-  $color3: #333638;
-  $color4: #424344;
-  $color5: #181818;
-  $body: #000;
-  $placeholder-color: #95c1e0;
-}
-
-@import url("icon-font.css");
-
 @function pxToEm($px, $base: 16) {
   @return $px / $base + 0em;
 }
 
 body {
-  background: $body;
-  margin: 0;
+  background-color: #343a40!important;
   min-width: fit-content;
   font-family: 'Open Sans', sans-serif;
 }
 
 .navbar-center .nav-link{
   text-align: center;
+}
+
+.navbar-nav {
+    /* inline-flex:elementa platumu aprobezo ap ta izmeriem */
+    display: inline-flex!important;
 }
 
 .navbar-center {
@@ -58,7 +39,6 @@ body {
 .about_me_block h3 {
     color: #fff;
     border: pxToEm(2) solid white;
-    padding: .375rem .75rem;
     padding: pxToEm(15) pxToEm(50);
 }
 
@@ -77,9 +57,8 @@ body {
     h3 {
     color: #fff;
     border: pxToEm(2) solid white;
-    padding: .375rem .75rem;
     padding: pxToEm(15) pxToEm(50);
-}
+    }
     .col-12 {
         text-align: center;
     }
@@ -98,7 +77,7 @@ body {
     img {
         max-width: 100%;
     }
-    
+    // lai bildes butu kopa
     .col-md-4{
         padding:0;
     }
@@ -113,4 +92,56 @@ hr {
 
 .contacts {
     background-color: #000;
+}
+
+.contact_block {
+    h3 {
+        border: pxToEm(2) solid white;
+        padding: pxToEm(15) pxToEm(50);
+    }
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) { 
+    .navbar .nav-link {
+        margin-right: 3rem!important;
+    }  
+}
+
+@media (max-width: 768px) {
+    .about_me_block .mobile {
+          padding-top: 40px;
+        }  
+}
+
+@media (min-width: 750px) {
+    .desktop {
+          padding-top: 40px;
+          padding-bottom: 30px;
+
+        }  
+}
+
+.main_menu {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.fas{
+&.fa-baby{
+ font-size: 30px;
+ color: rgb(27, 245, 245);
+
+}
+&.fa-suitcase{
+    font-size: 30px;
+    color: rgb(128, 84, 3);
+}
+
+&.fa-star{
+    font-size: 30px;
+    color: rgb(255, 238, 4);
+}
 }
